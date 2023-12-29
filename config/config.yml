@@ -1,0 +1,162 @@
+libraries:
+  Movies:
+    metadata_path:
+    - file: metadata/Movies/star-trek-universe.yml
+    - file: metadata/Movies/middle-earth-universe.yml
+    - file: metadata/Movies/star-wars-universe.yml
+    - file: metadata/Movies/wizarding-world-universe.yml
+    - file: metadata/Movies/marvel.yml
+    - file: metadata/Movies/alien-universe.yml
+    - file: metadata/Movies/holiday.yml
+    - file: metadata/Movies/movies-collections.yml
+
+    overlay_path:
+    - remove_overlays: false
+    - reapply_overlay: false
+    - pmm: resolution
+      template_variables:
+       back_color: "#000000D9"
+    - pmm: mediastinger
+      template_variables:
+       horizontal_offset: 250       
+    - pmm: video_format
+    - pmm: language_count
+
+    operations:
+      library_name: Movies
+      schedule: weekly(monday)
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+      metadata_backup:
+        path: backup/Movies_backup.yml
+        sync_tags: true
+        add_blank_entries: true
+
+  TV Shows:
+        
+    overlay_path:
+    - remove_overlays: false
+    - reapply_overlay: true
+    - file: overlays/TV-Shows/show-type.yml
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/custom_fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_miniseries: "#D1A32E"    
+    - pmm: status
+      template_variables:    
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/custom_fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_airing: "#016920"
+        back_color_returning: "#81007F"
+        back_color_canceled: "#ed1f1f"
+        back_color_ended: "#000847"     
+             
+    - pmm: resolution
+      template_variables:
+       overlay_level: season
+    - pmm: audio_codec
+      template_variables:
+        overlay_level: season
+    - pmm: video_format
+      template_variables:
+        overlay_level: season
+    operations:
+      library_name: TV Shows
+      schedule: weekly (tuesday)
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+      metadata_backup:
+        path: backup/TV-Shows_backup.yml
+        sync_tags: true
+        add_blank_entries: true
+      assets_for_all: true
+
+playlist_files:
+   - file: config/playlists.yml
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: /assets
+  reports_directory: /reports
+  asset_folders: true
+  asset_depth: 2
+  create_asset_folders: true
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: true
+  show_missing_season_assets: true
+  show_missing_episode_assets: true
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 2
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: true
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_exclude_users:
+  playlist_report: true
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+
+plex:
+  url: http://192.168.1.37:32400
+  token: ZUNX6H_1SSMHMSodjV77
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+tmdb:
+  apikey: 032b098b7969a1eb4294ea123b951be5
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                        # Can be individually specified per library as well
+  url: http://192.168.1.37:8181
+  apikey: x2JiJJaUaAm1UFNWl2et2o41ITxBjqRa
+  cache_expiration: 60
+  region:
+trakt:
+  client_id: 4fe86aa0780ead5cd02914f1c4e7de817b439d8c1fc66ff267fb83526bd8dfff
+  client_secret: 8637f6e11b337c6bd01c75d18fcad4dbaf735bb8db68a3bc45c3b685926d525f
+  pin:
+  authorization:
+    access_token: 47fc7a7d16a2e378c601ab5332b3a549945967d334a1ce8e3f749b8266dd88fd
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: 8a69a8e3cabce33aa206776944f79ffe39d7990fae8bb7c42eea602f4007b7ee
+    scope: public
+    created_at: 1702128444
+mdblist:
+  apikey: i1pygdsrv2ratd5q7m5wrahiq
+  cache_expiration: 60
