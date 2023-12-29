@@ -1,0 +1,50 @@
+templates:
+  Collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: release
+   
+collections:   
+  Alien/Predator Universe:
+    template: {name: Collection, collection: "8091, 135416, 115762, 399", poster: https://theposterdb.com/api/assets/447739}
+  Alien Collection:
+    template: {name: Collection, collection: 8091, poster: https://theposterdb.com/api/assets/168446}
+  Prometheus Collection:
+    template: {name: Collection, collection: 135416, poster: https://theposterdb.com/api/assets/197600}
+  AVP Collection:
+    template: {name: Collection, collection: 115762, poster: https://theposterdb.com/api/assets/345661}
+  Predator Collection:
+    template: {name: Collection, collection: 399, poster: https://theposterdb.com/api/assets/163975}  
+    
+metadata:
+  Alien:
+    url_poster: https://theposterdb.com/api/assets/1214
+  Aliens:
+    url_poster: https://theposterdb.com/api/assets/1215
+  Alien³:
+    url_poster: https://theposterdb.com/api/assets/1216
+  "Alien: Resurrection":
+    url_poster: https://theposterdb.com/api/assets/1217
+  Alien vs. Predator:
+    url_poster: https://theposterdb.com/api/assets/1218
+  "Aliens vs. Predator: Requiem":
+    url_poster: https://theposterdb.com/api/assets/1219
+  Prometheus:
+    url_poster: https://theposterdb.com/api/assets/1220
+  "Alien: Covenant":
+    url_poster: https://theposterdb.com/api/assets/1221
+  Predator:
+    url_poster: https://theposterdb.com/api/assets/244
+  Predator 2:
+    url_poster: https://theposterdb.com/api/assets/245
+  Predators:
+    url_poster: https://theposterdb.com/api/assets/246
+  The Predator:
+    url_poster: https://theposterdb.com/api/assets/247
+  Prey:
+    url_poster: https://theposterdb.com/api/assets/255438

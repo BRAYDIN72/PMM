@@ -1,0 +1,56 @@
+###################################################################################################
+#                                                                                                 #
+#                       The Harry Potter Universe Collections and Metadata                        #
+#                                          by: Braydin72                                          #
+#                                                                                                 #
+###################################################################################################
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+#    sort_title: <<collection_name>>
+collections:
+
+  "Harry Potter Collection":
+    template: {name: Set, collection: 1241, poster: https://theposterdb.com/api/assets/162216 }
+
+  "Fantastic Beasts Collection":
+    template: {name: Set, collection: 435259, poster: https://theposterdb.com/api/assets/173773 }
+
+  "The Wizarding World of Harry Potter":
+    template: {name: Set, collection: "1241, 435259", poster: https://theposterdb.com/api/assets/422283 }
+
+  
+# XXXXXX Universe Collection (https://theposterdb.com/set/20660) Kindle Cover Version:  Artwork by Olly Moss.  (http://ollymoss.com/#/potter/ )
+metadata:
+  Harry Potter and the Sorcerer's Stone:
+    url_poster: https://theposterdb.com/api/assets/34023
+  Harry Potter and the Chamber of Secrets:
+    url_poster: https://theposterdb.com/api/assets/34024
+  Harry Potter and the Prisoner of Azkaban:
+    url_poster: https://theposterdb.com/api/assets/34025
+  Harry Potter and the Goblet of Fire:
+    url_poster: https://theposterdb.com/api/assets/34026
+  Harry Potter and the Order of the Phoenix:
+    url_poster: https://theposterdb.com/api/assets/34027
+  Harry Potter and the Half-Blood Prince:
+    url_poster: https://theposterdb.com/api/assets/34028  
+  "Harry Potter and the Deathly Hallows: Part 1":
+    url_poster: https://theposterdb.com/api/assets/34029
+  "Harry Potter and the Deathly Hallows: Part 2":
+    url_poster: https://theposterdb.com/api/assets/34030
+# Fantastic Beasts Collection (https://theposterdb.com/set/20837) Original Work by Aloha_Alona (https://theposterdb.com/user/Aloha_Alona)
+  Fantastic Beasts and Where to Find Them:
+    url_poster: https://theposterdb.com/api/assets/34282
+  "Fantastic Beasts: The Crimes of Grindelwald":
+    url_poster: https://theposterdb.com/api/assets/34283
+  "Fantastic Beasts: The Secrets of Dumbledore":
+    url_poster: https://theposterdb.com/api/assets/234426

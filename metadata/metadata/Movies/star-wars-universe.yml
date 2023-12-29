@@ -1,0 +1,54 @@
+###################################################################################################
+#                                                                                                 #
+#                             Star Wars Universe Collections and Metadata                         #
+#                                          by: Braydin72                                          #
+#                                                                                                 #
+###################################################################################################
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+#    sort_title: <<collection_name>>
+collections:
+
+  "Star Wars: Skywaker Saga Collection":
+    template: {name: Set, collection: 10, movie: "330459, 348350", poster: https://theposterdb.com/api/assets/447792 }
+    summary: A long time ago in a galaxy far, far away....
+  "Star Wars Collection":
+    template: {name: Set, collection: 10, poster: https://theposterdb.com/api/assets/244730 }
+  "A Star Wars Story Collection":  
+     template: {name: Set, movie: "330459, 348350", poster: https://theposterdb.com/api/assets/429631 }
+
+  
+# Star Wars: The Complete Collection by RedHeadJedi (https://theposterdb.com/set/44420)
+metadata:
+  "Star Wars: Episode IV - A New Hope":
+    url_poster: https://theposterdb.com/api/assets/69932
+  "Star Wars: Episode V - The Empire Strikes Back":
+    url_poster: https://theposterdb.com/api/assets/69933
+  "Star Wars: Episode VI - Return of the Jedi":
+    url_poster: https://theposterdb.com/api/assets/69934
+  "Star Wars: Episode I - The Phantom Menace":
+    url_poster: https://theposterdb.com/api/assets/69935
+  "Star Wars: Episode II - Attack of the Clones":
+    url_poster: https://theposterdb.com/api/assets/69936
+  "Star Wars: Episode III - Revenge of the Sith":
+    url_poster: https://theposterdb.com/api/assets/69937
+  "Star Wars: Episode VII - The Force Awakens":
+    url_poster: https://theposterdb.com/api/assets/69939
+  "Rogue One: A Star Wars Story":
+    url_poster: https://theposterdb.com/api/assets/69940
+  "Star Wars: Episode VIII - The Last Jedi":
+    url_poster: https://theposterdb.com/api/assets/69941
+  "Solo: A Star Wars Story":
+    url_poster: https://theposterdb.com/api/assets/69942
+  "Star Wars: Episode IX - The Rise of Skywalker":
+    url_poster: https://theposterdb.com/api/assets/69943    
