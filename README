@@ -1,0 +1,11 @@
+Look, I don't even know what I am doing with half of this stuff. So no reason to read too much here
+
+setup your docker  with each folder as a path.
+/config
+/templates
+/metadata
+/overlay
+/reports
+/logs
+ect... past that I can only tell you that some things I managed to do were complete accidents so there is a ton of un-needed code, that problem is, I am not sure what of it is needed.
+
