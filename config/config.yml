@@ -129,34 +129,34 @@ settings:
   check_nightly: false
 
 plex:
-  url: http://192.168.1.37:32400
-  token: ZUNX6H_1SSMHMSodjV77
+  url:
+  token:
   timeout: 60
   clean_bundles: false
   empty_trash: false
   optimize: false
   db_cache:
 tmdb:
-  apikey: 032b098b7969a1eb4294ea123b951be5
+  apikey:
   language: en
   cache_expiration: 60
   region:
 tautulli:                        # Can be individually specified per library as well
-  url: http://192.168.1.37:8181
-  apikey: x2JiJJaUaAm1UFNWl2et2o41ITxBjqRa
+  url: 
+  apikey: 
   cache_expiration: 60
   region:
 trakt:
-  client_id: 4fe86aa0780ead5cd02914f1c4e7de817b439d8c1fc66ff267fb83526bd8dfff
-  client_secret: 8637f6e11b337c6bd01c75d18fcad4dbaf735bb8db68a3bc45c3b685926d525f
+  client_id: 
+  client_secret: 
   pin:
   authorization:
-    access_token: 47fc7a7d16a2e378c601ab5332b3a549945967d334a1ce8e3f749b8266dd88fd
+    access_token: 
     token_type: Bearer
-    expires_in: 7889237
-    refresh_token: 8a69a8e3cabce33aa206776944f79ffe39d7990fae8bb7c42eea602f4007b7ee
+    expires_in: 
+    refresh_token: 
     scope: public
     created_at: 1702128444
 mdblist:
-  apikey: i1pygdsrv2ratd5q7m5wrahiq
+  apikey: 
   cache_expiration: 60
